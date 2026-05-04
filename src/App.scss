@@ -1,0 +1,54 @@
+@use "open-props-scss" as *;
+
+header {
+  width: 100vw;
+  background: $gray-6;
+  height: min-content;
+  display: flex;
+  align-items: center;
+  height: 75px;
+
+}
+nav {
+height: 100%;
+max-width: 90vw;
+width: 100%;
+
+}
+
+ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+align-items: center;
+justify-content: space-evenly;
+}
+
+nav button:hover:not(.login) {
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  transition: 250ms;
+}
+nav button:not(.login), nav button:active:not(.login) {
+  font-size: 120%;
+  background: transparent;
+  border: none;
+  color: rgb(255, 255, 255);
+  transition: 250ms;
+}
+.login {
+background: $blue-6;
+padding: 0.5vh;
+border-radius: 15px;
+border: 2px solid white;
+font-size: 120%;
+color: rgb(255, 255, 255);
+}
+main {
+width: 100vw;
+height: calc(100vh - 75px);
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+}

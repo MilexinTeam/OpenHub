@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "open-props-scss": "^0.8.0",
     "solid-js": "^1.9.12"
   },
   "devDependencies": {
